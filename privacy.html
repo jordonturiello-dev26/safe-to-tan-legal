@@ -12,65 +12,81 @@
     }
 
     body {
-      margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(
-        180deg,
-        #eaf6ff 0%,
-        #eaf6ff 78%,
-        #f6f1ea 92%,
-        #fff6e8 100%
-      );
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #111;
-    }
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #eaf6ff 0%,
+    #eaf6ff 78%,
+    #f6f1ea 92%,
+    #fff6e8 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+}
 
-    /* Header logo */
+    /* Header (logo only) */
     .header {
-      padding: 24px 0 16px;
-    }
+  padding: 12px 0 6px;
+}
 
     .header img {
       height: 250px;
       width: auto;
+      display: block;
     }
 
     /* Document container */
     .document {
-      width: 100%;
-      max-width: 760px;
-      max-height: calc(100vh - 220px);
-      background: #fff;
-      border-radius: 20px;
-      padding: 40px 36px;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
-      overflow-y: auto;
-      margin-top: 8px;
-    }
+  width: 100%;
+  max-width: 760px;
+  max-height: calc(100vh - 320px);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+}
 
     .document h1 {
       font-size: 24px;
       margin-top: 0;
     }
 
-    .document p {
+    .document h2 {
+      font-size: 16px;
+      margin-top: 28px;
+    }
+
+    .document p,
+    .document li {
       font-size: 14px;
       line-height: 1.6;
       color: #333;
     }
 
-    /* Footer */
-    footer {
-      margin: 24px 0 32px;
-      font-size: 12px;
-      opacity: 0.6;
+    .document ul {
+      padding-left: 18px;
     }
 
+    /* Footer */
+    footer {
+  margin: 8px 0 12px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
     @media (max-width: 480px) {
+      .header img {
+        height: 180px;
+      }
+
       .document {
         padding: 28px 22px;
+        max-height: calc(100vh - 260px);
         border-radius: 16px;
       }
     }
@@ -86,12 +102,110 @@
   <main class="document">
     <h1>Privacy Policy</h1>
 
+    <p><strong>Last updated:</strong> 24 December 2025</p>
+
     <p>
-      This Privacy Policy explains how Safe To Tan collects, uses, and protects your information.
+      This Privacy Policy explains how Safe To Tan (“Safe To Tan”, “we”, “us”, or “the App”)
+      collects, uses, and protects your information when you use the Safe To Tan application.
+    </p>
+
+    <h2>Purpose of the App</h2>
+    <p>
+      Safe To Tan is a companion guidance application designed to provide general,
+      informational recommendations related to sun exposure. The App uses environmental
+      information, such as UV index data, to assist users in making informed decisions.
     </p>
 
     <p>
-      <!-- Full policy text goes here -->
+      The App is provided for informational and educational purposes only and is not
+      intended to provide medical advice, diagnosis, or treatment.
+    </p>
+
+    <h2>Not Medical Advice</h2>
+    <p>
+      Safe To Tan does not provide medical advice and should not be relied upon as a
+      substitute for professional medical guidance.
+    </p>
+
+    <p>
+      Information presented in the App is general in nature and may not be appropriate
+      for all individuals. Always seek advice from a qualified healthcare professional
+      regarding any medical or skin-related concerns.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <p>
+      Safe To Tan collects only the information necessary to provide core functionality.
+      This may include:
+    </p>
+
+    <ul>
+      <li>Approximate location data to display relevant UV index information</li>
+      <li>Basic usage data to improve app performance and reliability</li>
+    </ul>
+
+    <p>
+      Safe To Tan does not require users to create an account and does not collect
+      personally identifiable information such as names, physical addresses, or
+      payment details unless explicitly provided by the user.
+    </p>
+
+    <h2>How We Use Information</h2>
+    <p>
+      Information collected by the App is used solely to:
+    </p>
+
+    <ul>
+      <li>Provide and improve app features</li>
+      <li>Display relevant environmental information</li>
+      <li>Maintain app stability and functionality</li>
+    </ul>
+
+    <p>
+      Safe To Tan does not sell, rent, or trade personal information.
+    </p>
+
+    <h2>User Responsibility</h2>
+    <p>
+      You acknowledge that sun exposure involves inherent risks and that individual
+      skin response varies.
+    </p>
+
+    <p>
+      You are solely responsible for how you interpret and act on information provided
+      by the App, including decisions related to sun exposure duration, timing, and
+      protective measures such as sunscreen or clothing.
+    </p>
+
+    <h2>Data Storage and Security</h2>
+    <p>
+      We take reasonable measures to protect information collected through the App.
+      However, no method of electronic transmission or storage is completely secure,
+      and absolute security cannot be guaranteed.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The App may rely on third-party services (such as weather or UV data providers)
+      to deliver information. These services operate independently and are governed
+      by their own privacy policies.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated from time to time. Any changes will be posted
+      on this page. Continued use of the App after changes are published constitutes
+      acceptance of the updated policy.
+    </p>
+
+    <h2>Contact Information</h2>
+    <p>
+      If you have questions about this Privacy Policy or the Safe To Tan App, please contact:
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:koiventures@gmail.com">koiventures@gmail.com</a>
     </p>
   </main>
 
